@@ -72,8 +72,8 @@
 		const peso = 100;
 		const dollar = 56.22;
 		let total = peso / dollar; // this divides pesos by dollars to show the value
-		document.getElementById("dollar").innerHTML =
-		total + " USD";
+		total = Math.round(total * 100) / 100;
+      		document.getElementById("dollar").innerHTML = total + " USD";
 		// I used the current value listed online of peso to dollars
 	</script> 
 </body>
