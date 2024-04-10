@@ -65,9 +65,9 @@
 		const peso = 100;
 		const yen = 2.70;
 		let total = peso / yen; // this divides pesos by yen to show the value
-		document.getElementById("dollar").innerHTML =
-		total + " ¥";
-		// I used the current value listed online of peso to dollars
+		total = Math.round(total * 100) / 100;
+       		document.getElementById("dollar").innerHTML = total + " USD";
+		// I used the current value listed online of peso to yen
 	</script> 
 </body>
 </html>
